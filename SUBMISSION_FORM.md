@@ -26,7 +26,7 @@ https://github.com/NandiniJerripothula-14/PKI-Based-2FA-MicroService
 ### 2. Commit Hash (40-character hex)
 **Value to submit:**
 ```
-b8d5a0c99613e815ee84962bd7bbf580f184d0ae
+5ea2d19ce898f4b0783be06d48b3789325edc4e7
 ```
 
 ✅ **Verification:**
@@ -70,7 +70,7 @@ rCq39ezzJNLkhcvkQb+pYdsCAwEAAQ==
 ### 4. Encrypted Seed (Base64, Single Line)
 **Value to submit:**
 ```
-hwpWnckygyMyQzaXdpM8/3ae7ImRFQThP7e84oroiiuAIuYCI1czK/Vdu/w/OWfV4D0hD2hjPWLh6QfZssIfVTa3Fz4zcWIoIkUmbt10fFsTr3YEcXeICOV1Revp9ch/SUnOI4KVgQQVO5JoaLhDARM4o+16BR9Ft58hmyqeZrI/gHv4AR78H+Y5IeW/ZhuM0ykh/QSCJeibPjQkw/Xra13U50iGA5/3k8oUC8rMGghSNOea9uMi+8VoFzd+HQbDa2Z5nW0pbSFmnIu4cloDONUqoraOYCSEkQuyPGE026a1hT1r8j2QzzQ4Z8MgT0/Z5j5gqn2vrVZaX/NbS99XvkudPupiS1l05UP58QYWS6lZTI5mYhTEVLNrX6uwy90aDSqRnA9T/VqeEpXEpop3zSJ+1YpbCDOvskibUuA0KHtJvcqMfqzaIGswyvpkj8lpAE9Y0o9FWUBZZqAfBzjtRu3c+aYaJ8uRYNJk76GsyljEGARqU5CGr4H8COclF3faIihhJ575LqHQ6NHvSxhRq2ct9qVmlqt/iVo+1mA8d61WjlMh6nQ+oVdKz5H+xX2xhkuxTMMLSn38DUulzBJ7+JGzDITFzDbVrLzpUEK8aA8xa8TQjTj51hmzWODhl2SBcjaJRaGig/97PiD3cSfaedLgVMvILJSgiUzrbB4Tgso=
+Exe07aLkIuKaB0DPFxkjOMMEAQzPLUXhMH6OdAcD3IieFWQAihljQmla4pv5c5pdV4I7uhpq2N0weFJyBs9io6vSWgnpXITQq6tY38+csmGPXjUl6nWp82VVx89/YU0rpbosUOj59u8xjgevQR6i9lBYSokNWYwjbJKugz4xApyVvC7omRooFj9ct3j8Ph0nl069XDV7Yg8z4W0f5K/ZqbUgmfAcObWXcw7mqLtjA9hjbBkTGC0s3RdGJYmb0ebt4obzE71P/qfbaunr+BD6P9R3oLukhMqiw+nl/6hCDgl4+D62BXpcdhLlwlGXeWiDZYyjb1khlMAanC1F+I4OTd2MTaSt9ZCc9mmWMJp7E6NpNLSWQyl3oVl32Kn5yUi0HqNuhnoH83seAY40CTinTm7AkihnADHuNLetjbKMsU2yOuP5oXetce3n/BE+q+3j+RKPF/YdbLqtaWMe4VKk7Cf03OIhPkM7LOKvsduII3rlff5UmKVJyGBmocOXcQuF67Sb24q07icgpxQrTq9RWYKmmuxV6BNfSWoTuDQ0bQDckdtS8xDvJYTeDlM8X5HbpmDRUw0qpUB9NR6U5OHTPqS/cYp+qMjYIjUNd/+XyhPGLTCQ2A5uhboNZH8q79OdG64LYzo1M9Hv4BPh4V/KVCAZ3OKXzjJkueM4OrsAhAI=
 ```
 
 ✅ **Verification:**
@@ -83,23 +83,14 @@ hwpWnckygyMyQzaXdpM8/3ae7ImRFQThP7e84oroiiuAIuYCI1czK/Vdu/w/OWfV4D0hD2hjPWLh6QfZ
 
 ### 5. Encrypted Commit Signature (Base64, Single Line)
 
-⚠️ **ACTION REQUIRED:**
+✅ **GENERATED:**
 
-1. Obtain `instructor_public.pem` from course materials (real public key, not placeholder)
-2. Replace the placeholder file at `instructor_public.pem` in your repository
-3. Run the proof generation script:
-   ```bash
-   python generate_final_proof.py
-   ```
-4. Copy the output under "Encrypted Signature (base64, single line)"
-5. Paste the value below:
+Encrypted with instructor public key (RSA/OAEP-SHA256) and signed with student private key (RSA-PSS-SHA256).
 
 **Value to submit:**
 ```
-[PENDING: Run `python generate_final_proof.py` after replacing `instructor_public.pem` with the real instructor key.]
+j2ia3zja1O6V90PZavnP9K2EnHm/pSwF2j8qYEzd4wyPyHpLwZEfCWZTN3vInlezb1iV1vm/QYLJPtbQi5F7ojJH2iyhAIhNz56JsopslGLTaADYRldQYukvJpZMEeRWjT4Ih16kgVE7+N5bx2MC5c47Ih5v/e50PMFevTiZXkrrZYdGscH3PldlC5WA/rRpK3zxdPwv7r5iYhovEwPv5NhEw8bBCHKJqLEiHdPRU/NavRiZaaHOlj67YghnN5uIygtjW/Hv0+NiQgM7NFYPAkgglcUlqqCkyXc0xRkwxj4pYoeh0gw5TePnkBJqG9oST/YVKf0vPufaKOw/oxOTrhbrdyGSVK49vU5lmOnaq6gpI3haN76/GkqtmFEMUKXiymutyMNY5j4Efa+05dvxV2cYf9JGyuw04zpMjIwjEobqA3GYUS32DY++gvhc80sX9byaf6UnmVIPUKbChwU0Xm1bqbbPfWPhZVEOuE0TI4KutQq7KSxwVqdgQhkq30+2NDBqaIJ181b/lCRwYRs1FnUQMZFGQWgsi00CNGwU1aPhVr0zUsTtDEUeU1lIhk9dd8op6OBoRxpGVjTfylAwpAp+9dB7YeMm9pzIg9nVG9dxmm5GN0RsUsK4kLMXi9yNJh6HcOd0THdvK5RDBA+0MQHxoX0jOlXvtKK2mOx1xo3HkRS/0PvpBDb2R9LuEm7Z8h+hu7vHALR+Tr60vOZi3X+nz5j5nxGY+lPaZPYbZMaUL7knx/ojMrWjKeCeWCQ2sWoPLt2fn+fuZk0ovWC4v4Z3UN6Zer8pQin37pffUurBGjaKqlEPk/aOdz2jkuMO8THgYtZVrr5+bQOo2jw9uEjeVfl92IBvHPRrI51s+/4rNemK2Q9kSqsVByX4D/WtkwcEY6yc1tBm3Yli9a/hd849KKbHsaPResFM0RVZr6LDwT+kxXFPhkAGOI3UKKKsCEc4t71Fjl/XzRCAf70eCazyBY9Gjd9omYh0H5hl9Ppo4D+j1ICYYVQXyTjnKyJoo+Cmbo2kya8EkkjjM+QTVipqbh8ERFkllrB8FDh1B+/6CDwTMB28C1Hm2UuKrNQNS3A7+OmEWAbhrkKcCbDXqvJoPsDLou5HTnYaqvAUXtIqitVfDnQfc7vrPk9c5azh5f3uk1Y3jz//1SrLMsdy5iQBXfYTUxI5wnd/fP1T+fjElcChI8Y3+ZNejiQDVyWgbpwv9QVFV4J4V5Onx1aSnx23WfcZAjDXjZPsZmODQb5E0dlUbC+282GhNQ/6CLlVxHQOj5vzHgn7IWOTO86C1olmnVrizR5jXO17WDkgZbqx7mY/MNDb068btbRIrQfNfpLapKTbd4kf/W3K7QvH/w==
 ```
-
-⚠️ **This value cannot be generated until you provide the real instructor public key.**
 
 ---
 
