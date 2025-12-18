@@ -3,6 +3,7 @@
 import subprocess
 import base64
 import sys
+import json
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import padding
 
@@ -67,6 +68,15 @@ def generate_proof():
             
             # Base64 encode
             encrypted_b64 = base64.b64encode(encrypted_signature).decode('utf-8')
+            # Write to proof.json for reliable copy/paste without wrapping
+            try:
+                with open('proof.json', 'w', encoding='utf-8') as pf:
+                    json.dump({
+                        'commit_hash': commit_hash,
+                        'encrypted_signature_b64': encrypted_b64
+                    }, pf, ensure_ascii=False, indent=2)
+            except Exception as ef:
+                print(f"⚠️  Failed to write proof.json: {ef}")
             
             print(f"\n{'='*70}")
             print(f"PROOF OF WORK GENERATED")

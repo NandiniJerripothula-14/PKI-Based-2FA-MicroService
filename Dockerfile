@@ -22,6 +22,10 @@ COPY --from=builder /install /usr/local
 # Copy app code
 COPY . /app
 
+# Normalize line endings that may come from Windows hosts (remove CRs)
+RUN sed -i 's/\r$//' /app/cron/2fa-cron || true && \
+    find /app -maxdepth 1 -type f -name "*.sh" -exec sed -i 's/\r$//' {} + || true
+
 # Setup cron file
 RUN chmod 0644 /app/cron/2fa-cron && crontab /app/cron/2fa-cron
 
@@ -34,6 +38,7 @@ EXPOSE 8080
 
 # Start script
 COPY start.sh /start.sh
-RUN chmod +x /start.sh
+# Ensure start script has LF endings and executable
+RUN sed -i 's/\r$//' /start.sh && chmod +x /start.sh
 
 CMD ["/start.sh"]
