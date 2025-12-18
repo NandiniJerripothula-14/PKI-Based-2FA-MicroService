@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 set -e
 # Ensure UTC timezone
 export TZ=UTC

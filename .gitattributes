@@ -1,1 +1,10 @@
+# Enforce LF line endings for shell and cron files to avoid bash\r issues
+*.sh text eol=lf
+cron/* text eol=lf
+
+# Ensure PEM files use LF and are treated as text
+*.pem text eol=lf
+
+# Python files standardize to LF
+*.py text eol=lf
 cron/2fa-cron text eol=lf
